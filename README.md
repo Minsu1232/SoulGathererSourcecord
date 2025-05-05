@@ -18,9 +18,18 @@
 
 ## 폴더 안내
 
-던전능력 - 던전능력 관련 스크립트
+던전능력 - 던전능력 관련 스크립트 입니다. 
 
-몬스터 관련 - 몬스터 관련 스크립트 
+		1. 기술문서에서 설명한 GetSmartAbilitySelection()은 DungeonAbilityManager에 있습니다.
+
+몬스터 관련 - 몬스터 관련 스크립트
+
+		1. 몬스터 CSV - 몬스터 관련 CSV 파일들 입니다.
+		2. 몬스터 상태 및 전략 - 일부 상태와 전략 (공격,스킬)위주 입니다.
+		3. 몬스터 AI - AI스크립트들 입니다.
+		4. 보스패턴 - 보스 특수 상태 중 Pattern과 그와 함께하는 미니게임 스크립트들 입니다. 
+		5. 팩토리 - 몬스터 생성 기능 팩토리 파일 일부입니다.
+		
 
 ## 핵심 파일 안내
 
@@ -51,7 +60,6 @@
 
 ### 팩토리 패턴 구현
 - [StrategyFactory.cs](1_몬스터시스템/StrategyFactory.cs) - 전략 객체 생성 팩토리
-- [BossStrategyFactory.cs](2_보스시스템/BossStrategyFactory.cs) - 보스 전용 전략 생성 팩토리
 - [MonsterFactoryBase.cs](1_몬스터시스템/MonsterFactoryBase.cs) - 몬스터 생성을 담당하는 추상 팩토리
 - [RatMonsterFactory.cs](1_몬스터시스템/RatMonsterFactory.cs) - 특정 몬스터 생성 팩토리 구현
 

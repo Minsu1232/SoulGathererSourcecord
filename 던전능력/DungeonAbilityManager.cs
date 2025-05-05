@@ -1,8 +1,19 @@
-// DungeonAbilityManager.cs - 단순화된 버전
+
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-
+/// <summary>
+/// 던전 진행하며 능력들을 관리하는 매니저 클래스
+/// </summary>
+/// <remarks>
+/// 이 클래스는 싱글톤 패턴을 사용하여 던전 내에서 플레이어가 획득한 모든 능력을 관리합니다.
+/// 주요 기능:
+/// - 능력 획득 및 레벨업 처리
+/// - 희귀도 기반 능력 선택 제공
+/// - 스마트 선택 알고리즘을 통한 다양한 능력 조합 제공
+/// - 던전 진행도와 플레이어 클래스에 따른 능력 효과 적용
+/// - 시간의 우물 및 스탯 업그레이드를 통한 희귀 능력 등장 확률 수정
+/// </remarks>
 public class DungeonAbilityManager : MonoBehaviour
 {
     // Singleton 패턴
@@ -97,28 +108,6 @@ public class DungeonAbilityManager : MonoBehaviour
             ability.OnReset(playerClass);
         }
     }
-
-    // 스테이지 클리어 시 선택지 생성
-    //public List<DungeonAbility> GetAbilitySelection()
-    //{
-    //    List<DungeonAbility> availableAbilities = FilterAvailableAbilities();
-    //    List<DungeonAbility> selection = new List<DungeonAbility>();
-
-    //    // 필요한 개수만큼 랜덤하게 선택
-    //    for (int i = 0; i < abilitiesPerSelection; i++)
-    //    {
-    //        if (availableAbilities.Count == 0) break;
-
-    //        // 가중치 기반 랜덤 선택
-    //        DungeonAbility selectedAbility = SelectWeightedRandomAbility(availableAbilities);
-    //        selection.Add(selectedAbility);
-
-    //        // 중복 방지를 위해 이미 선택된 능력과 같은 ID를 가진 능력 제거
-    //        availableAbilities.RemoveAll(a => a.id == selectedAbility.id);
-    //    }
-
-    //    return selection;
-    //}
 
     // 현재 상황에 맞는 능력 필터링
     private List<DungeonAbility> FilterAvailableAbilities()
