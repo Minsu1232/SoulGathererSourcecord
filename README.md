@@ -82,7 +82,7 @@
 
 - [DungeonAbility.cs](던전능력/DungeonAbility.cs) - 던전 능력 기본 클래스
 - [AttackAbility.cs](던전능력/AttackAbility/AttackAbility.cs) - 공격 능력 구현
-- [MovementAbility.cs](던전능력/MoveAbility/MovementAbility.cs) - 이동 능력 구현
+- [MovementAbility.cs](던전능력/MovementAbility/MovementAbility.cs) - 이동 능력 구현
 - [PassiveAbility.cs](던전능력/PassiveAbility/PassiveAbility.cs) - 패시브 능력 구현
 - [SpecialAbility.cs](던전능력/SpecialAbility/SpecialAbility.cs) - 특수 능력 구현
 
