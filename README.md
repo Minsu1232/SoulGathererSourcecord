@@ -38,12 +38,12 @@
 ### 몬스터 AI 시스템
 
 - [CreatureAI.cs](몬스터관련/몬스터AI/CreatureAI.cs) - 몬스터 AI의 기본 뼈대가 되는 추상 클래스
-- [BasicCreatureAI.cs](몬스터관련/몬스터AI/BasicCreatureAI.cs) - 일반 몬스터용 AI 구현
+- [BasicMonsterAI.cs](몬스터관련/몬스터AI/BasicMonsterAI.cs) - 일반 몬스터용 AI 구현
 - [BossAI.cs](몬스터관련/몬스터AI/BossAI.cs) - 보스 몬스터 전용 AI 시스템
 
 ### 상태 패턴 구현
 
-- [IMonsterState.cs](몬스터관련/몬스터 상태 및 전략/IMonsterState.cs) - 몬스터 상태 인터페이스
+- [IMonsterState.cs](몬스터관련/몬스터상태및전략/IMonsterState.cs) - 몬스터 상태 인터페이스
 - [AttackState.cs](몬스터관련/몬스터 상태 및 전략/AttackState.cs) - 몬스터의 공격 상태 관리
 - [SkillState.cs](몬스터관련/몬스터 상태 및 전략/SkillState.cs) - 몬스터의 스킬 사용 상태 관리
 - [PatternState.cs](몬스터관련/보스패턴/PatternState.cs) - 보스의 패턴 상태 관리
