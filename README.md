@@ -44,48 +44,47 @@
 ### 상태 패턴 구현
 
 - [IMonsterState.cs](몬스터관련/몬스터상태및전략/IMonsterState.cs) - 몬스터 상태 인터페이스
-- [AttackState.cs](몬스터관련/몬스터 상태 및 전략/AttackState.cs) - 몬스터의 공격 상태 관리
-- [SkillState.cs](몬스터관련/몬스터 상태 및 전략/SkillState.cs) - 몬스터의 스킬 사용 상태 관리
+- [AttackState.cs](몬스터관련/몬스터상태 및전략/AttackState.cs) - 몬스터의 공격 상태 관리
+- [SkillState.cs](몬스터관련/몬스터상태및 전략/SkillState.cs) - 몬스터의 스킬 사용 상태 관리
 - [PatternState.cs](몬스터관련/보스패턴/PatternState.cs) - 보스의 패턴 상태 관리
 
 ### 전략 패턴 구현
 
-- [IAttackStrategy.cs](1몬스터시스템/IAttackStrategy.cs) - 공격 전략 인터페이스
-- [BasePhysicalAttackStrategy.cs](1몬스터시스템/BasePhysicalAttackStrategy.cs) - 물리 공격 전략 기본 클래스
-- [ChargeAttackStrategy.cs](1몬스터시스템/ChargeAttackStrategy.cs) - 돌진 공격 전략 구현
-- [ISkillStrategy.cs](1몬스터시스템/ISkillStrategy.cs) - 스킬 전략 인터페이스
-- [BossMultiAttackStrategy.cs](2보스시스템/BossMultiAttackStrategy.cs) - 보스의 다중 공격 전략 관리
-- [BossMultiSkillStrategy.cs](2보스시스템/BossMultiSkillStrategy.cs) - 보스의 다중 스킬 전략 관리
+- [IAttackStrategy.cs](몬스터관련/몬스터상태및전략/공격전략/IAttackStrategy.cs) - 공격 전략 인터페이스
+- [BasePhysicalAttackStrategy.cs](몬스터관련/몬스터상태및전략/공격전략/BasePhysicalAttackStrategy.cs) - 물리 공격 전략 기본 클래스
+- [ChargeAttackStrategy.cs](몬스터관련/몬스터상태및전략/공격전략/ChargeAttackStrategy.cs) - 돌진 공격 전략 구현
+- [ISkillStrategy.cs](몬스터관련/몬스터상태및전략/스킬전략/ISkillStrategy.cs) - 스킬 전략 인터페이스
+- [BossMultiAttackStrategy.cs](몬스터관련/몬스터상태및전략/공격전략/BossMultiAttackStrategy.cs) - 보스의 다중 공격 전략 관리
+- [BossMultiSkillStrategy.cs](몬스터관련/몬스터상태및전략/스킬전략/BossMultiSkillStrategy.cs) - 보스의 다중 스킬 전략 관리
 
 ### 스킬 시스템
 
-- [ISkillEffect.cs](1몬스터시스템/ISkillEffect.cs) - 스킬 효과 인터페이스
-- [ProjectileSkillEffect.cs](1몬스터시스템/ProjectileSkillEffect.cs) - 발사체 기반 스킬 효과
-- [IProjectileMovement.cs](1몬스터시스템/IProjectileMovement.cs) - 발사체 이동 인터페이스
-- [ParabolicMovement.cs](1몬스터시스템/ParabolicMovement.cs) - 포물선 이동 구현
+- [ISkillEffect.cs](몬스터관련/몬스터상태및전략/스킬전략/ISkillEffect.cs) - 스킬 효과 인터페이스
+- [ProjectileSkillEffect.cs](몬스터관련/몬스터상태및전략/스킬전략/ProjectileSkillEffect.cs) - 발사체 기반 스킬 효과
+- [IProjectileMovement.cs](몬스터관련/몬스터상태및전략/스킬전략/IProjectileMovement.cs) - 발사체 이동 인터페이스
+- [ParabolicMovement.cs](몬스터관련/몬스터상태및전략/스킬전략/ParabolicMovement.cs) - 포물선 이동 구현
 
 ### 팩토리 패턴 구현
 
-- [StrategyFactory.cs](1몬스터시스템/StrategyFactory.cs) - 전략 객체 생성 팩토리
-- [MonsterFactoryBase.cs](1몬스터시스템/MonsterFactoryBase.cs) - 몬스터 생성을 담당하는 추상 팩토리
-- [RatMonsterFactory.cs](1몬스터시스템/RatMonsterFactory.cs) - 특정 몬스터 생성 팩토리 구현
+- [StrategyFactory.cs](몬스터관련/몬스터상태및전략/전략팩토리/StrategyFactory.cs) - 전략 객체 생성 팩토리
+- [MonsterFactoryBase.cs](몬스터관련/팩토리/MonsterFactoryBase.cs) - 몬스터 생성을 담당하는 추상 팩토리
+- [RatMonsterFactory.cs](몬스터관련/팩토리/RatMonsterFactory.cs) - 특정 몬스터 생성 팩토리 구현
 
 ### 보스 패턴 및 미니게임
 
-- [BossPattern.cs](2보스시스템/BossPattern.cs) - 보스 패턴의 기반 클래스
-- [BossPatternManager.cs](2보스시스템/BossPatternManager.cs) - 보스 패턴 관리 클래스
-- [IMiniGame.cs](2보스시스템/IMiniGame.cs) - 미니게임 인터페이스
-- [DodgeMiniGame.cs](2보스시스템/DodgeMiniGame.cs) - 회피 미니게임 구현
-- [MiniGameManager.cs](2보스시스템/MiniGameManager.cs) - 미니게임 매니저
+- [BossPattern.cs](몬스터관련/보스패턴/BossPattern.cs) - 보스 패턴의 기반 클래스
+- [BossPatternManager.cs](몬스터관련/보스패턴/BossPatternManager.cs) - 보스 패턴 관리 클래스
+- [IMiniGame.cs](몬스터관련/보스패턴/미니게임/IMiniGame.cs) - 미니게임 인터페이스
+- [DodgeMiniGame.cs](몬스터관련/보스패턴/미니게임/DodgeMiniGame.cs) - 회피 미니게임 구현
+- [MiniGameManager.cs](몬스터관련/보스패턴/미니게임/MiniGameManager.cs) - 미니게임 매니저
 
 ### 던전능력
 
-- [BossData.cs](2보스시스템/BossData.cs) - 보스 데이터 클래스
-- [DungeonAbility.cs](3능력시스템/DungeonAbility.cs) - 던전 능력 기본 클래스
-- [AttackAbility.cs](3능력시스템/AttackAbility.cs) - 공격 능력 구현
-- [MovementAbility.cs](3능력시스템/MovementAbility.cs) - 이동 능력 구현
-- [PassiveAbility.cs](3능력시스템/PassiveAbility.cs) - 패시브 능력 구현
-- [SpecialAbility.cs](3_능력시스템/SpecialAbility.cs) - 특수 능력 구현
+- [DungeonAbility.cs](던전능력/DungeonAbility.cs) - 던전 능력 기본 클래스
+- [AttackAbility.cs](던전능력/AttackAbility/AttackAbility.cs) - 공격 능력 구현
+- [MovementAbility.cs](던전능력/MoveAbility/MovementAbility.cs) - 이동 능력 구현
+- [PassiveAbility.cs](던전능력/PassiveAbility/PassiveAbility.cs) - 패시브 능력 구현
+- [SpecialAbility.cs](던전능력/SpecialAbility/SpecialAbility.cs) - 특수 능력 구현
 
 ### 커스텀 에디터 도구
 
